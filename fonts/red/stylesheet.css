@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Anguita Sans Medium It';
+    src: url('AnguitaSans-MediumIt.woff2') format('woff2'),
+        url('AnguitaSans-MediumIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+

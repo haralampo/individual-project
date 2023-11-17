@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Red Vevet - Demo';
+    src: url('RedVevet.woff2') format('woff2'),
+        url('RedVevet.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
