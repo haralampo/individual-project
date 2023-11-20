@@ -1,0 +1,456 @@
+nav {
+  font-size: 20px;
+  display: grid;
+  /* "Pets", "Travel", "Recipes" */
+  padding: 5px;
+  margin: 15px;
+  border-radius: 10px;
+  justify-content: center;
+  justify-self: center;
+  align-content: center;
+}
+
+.navbar {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  /* "Pets", "Travel", "Recipes" */
+  border-radius: 10px;
+  justify-content: center;
+  justify-self: center;
+  align-content: center;
+}
+
+nav li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 5px;
+}
+
+nav a {
+  padding: 10px;
+}
+
+#bottomp {
+  margin: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#bottomnav {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#currentpage {
+  text-decoration: underline white;
+} 
+
+.main {
+  display: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #b823b5ba;
+  font-family: 'YummyCupcakes';
+  color: white;
+
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 500px auto 550px auto 600px;
+}
+
+.div1 {
+    grid-row: 1 / span 1;
+    background-image: url(../images/debutback.JPG);
+    background-size: cover; /* or "contain" depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: 'YummyCupcakes';
+  src: url('../fonts/overall/YummyCupcakes.woff2') format('woff2'),
+      url('../fonts/overall/YummyCupcakes.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+ body {
+  scroll-behavior: smooth;
+  background-color: #34a649bb;
+  font-family: 'YummyCupcakes';
+  color: white;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+
+ p {
+  font-size: 20px;
+  text-indent: 50px;
+  line-height: 40px;
+  margin: 50px;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+#figcaption {
+  font-size: 20px;
+  text-align: center;
+}
+
+#faves {
+  position: absolute;
+  text-indent: 0px;
+  top: 0px;
+}
+
+.rep {
+
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  text-justify: center;
+  justify-content: center;
+
+}
+
+.rep > img {
+  -webkit-box-shadow: 0 0 20px 10px #ffffff78;
+  -moz-box-shadow: 0 0 20px 10px #ffffff78;
+  box-shadow: 0 0 20px 10px #ffffff78;
+}
+
+#reputation {
+  text-align: center;
+  font-size: large;
+}
+
+
+
+.div2 {
+  grid-row: 2 / span 1;
+}
+
+.div4 {
+  grid-row: 4 / span 1;
+}
+
+.img1, .img2, .img3 {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+.div5 {
+  grid-row: 5 / span 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+/* music player */
+
+.div3 {
+  grid-row: 3 / span 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.div3 > * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.music-player {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  background: rgb(255, 255, 255, 0.08);
+  padding: 30px;
+  overflow: hidden;
+  color: white;
+  margin-left: 100px;
+}
+
+.music-name, .artist-name {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.music-name {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-wrap: wrap;
+}
+
+.artist-name {
+  font-size: 20px;
+  margin-top: -15px;
+  padding-right: 0px;
+  -webkit-text-stroke: 0.1px black;
+  text-indent: 0px;
+  line-height: 0px;
+  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 30%;
+}
+
+.disk {
+  position: relative;
+  display: block;
+  margin-right: 100px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: black;
+  margin-right: 100px;
+  background-image: url('../musicimages/cover1.png');
+  background-size: cover;
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
+  animation: rotate 20s linear infinite;
+  animation-play-state: paused;
+}
+
+.disk.play {
+  animation-play-state: running;
+}
+
+.disk::before {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #34a649bb;
+}
+
+.song-slider {
+  width: 100%;
+  position: relative;
+  padding-bottom: 10px;
+  margin-top: 80px;
+}
+
+.seek-bar {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  background: #34a649bb;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.seek-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: -400px 0 0 400px #247332f9;
+}
+
+.current-time, .song-duration {
+  font-size: 14px;
+}
+
+.current-time {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.song-duration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.controls {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.play-btn, .backward, .forward {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.806);
+  cursor: pointer;
+  border: none;
+}
+
+.play-btn span {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 30px;
+  border-radius: 2px;
+  background: #34a649bb;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.backward span {
+  position: absolute;
+  top: 50%;
+  left: 31%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 30px;
+  border-radius: 50%;
+  background: #34a649bb;
+  clip-path: polygon(65% 0, 100% 0, 35% 50%, 100% 100%, 65% 100%, 0 50%);
+}
+
+.forward span {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 30px;
+  border-radius: 50%;
+  background: #34a649bb;
+  transition: 0.5s;
+  clip-path: polygon(0 0, 35% 0, 100% 50%, 35% 100%, 0 100%, 65% 50%);
+}
+
+.play-btn span:nth-child(2) {
+  left: 57%;
+  transform-origin: center;
+}
+
+.play-btn.pause span:nth-child(2) {
+  transform: translateY(-50%) scaleY(0);
+}
+
+.play-btn.pause span:nth-child(1) {
+  width: 35%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.806);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+img {
+  border-radius: 10%;
+}
+
+#funfacts {
+  position: relative;
+  text-indent: 0px;
+  margin: 0px;
+  width: 100vw;
+  text-align: center;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  margin: auto auto;
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 10%;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(63, 110, 71, 0.536);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back > p {
+  margin-top: 100px;
+  text-indent: 0px;
+}
