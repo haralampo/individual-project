@@ -77,6 +77,55 @@ main {
     background-repeat: no-repeat;
 }
 
+#fearlessdiv1 {
+  background-image: url(../images/fback.JPG);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#speaknowdiv1 {
+  background-image: url(../images/snback1.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#reddiv1 {
+  background-image: url(../images/redback.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#ninediv1 {
+  background-image: url(../images/nineback.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#repdiv1 {
+  background-image: url(../images/repback.jpeg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#loverdiv1 {
+  background-image: url(../images/loverback.JPG);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+figure {
+  padding: 80px;
+  overflow: visible;
+}
+
+
+
 @font-face {
   font-family: 'YummyCupcakes';
   src: url('../fonts/overall/YummyCupcakes.woff2') format('woff2'),
@@ -96,6 +145,30 @@ main {
   letter-spacing: 2px;
 }
 
+.bodyf {
+  background-color: #8e720eb2;
+}
+
+.bodysn {
+  background-color: rgba(143, 36, 143, 0.736);
+}
+
+.bodyred {
+  background-color: rgba(142, 8, 8, 0.805);
+}
+
+.bodynine {
+  background-color: rgba(29, 127, 202, 0.733);
+}
+
+.bodyrep {
+  background-color: rgb(72, 72, 72);
+}
+
+.bodylover {
+  background-color: rgba(241, 36, 135, 0.498);
+}
+
 
  p {
   font-size: 20px;
@@ -107,7 +180,7 @@ main {
   justify-content: center;
 }
 
-#figcaption {
+figcaption {
   font-size: 20px;
   text-align: center;
 }
@@ -126,10 +199,11 @@ main {
   margin-top: 100px;
   text-justify: center;
   justify-content: center;
+  padding: 0;
 
 }
 
-.rep > img {
+.rep > img, #image1, #image2 {
   -webkit-box-shadow: 0 0 20px 10px #ffffff78;
   -moz-box-shadow: 0 0 20px 10px #ffffff78;
   box-shadow: 0 0 20px 10px #ffffff78;
@@ -190,7 +264,7 @@ main {
 
 .music-player {
   width: 350px;
-  height: 350px;
+  height: fit-content;
   border-radius: 20px;
   background: rgb(255, 255, 255, 0.08);
   padding: 30px;
@@ -240,6 +314,30 @@ main {
   animation-play-state: paused;
 }
 
+#diskf1 {
+  background-image: url('../musicimages/fearlesscover1.png');
+}
+
+#disksn {
+  background-image: url('../musicimages/sncover2.jpg') !important;
+}
+
+#diskred {
+  background-image: url('../musicimages/reddisc.jpg');
+}
+
+#disknine {
+  background-image: url('../musicimages/ninedisc.jpg') !important;
+}
+
+#diskrep {
+  background-image: url('../musicimages/repdisc.jpg') !important;
+}
+
+#disklover {
+  background-image: url('../musicimages/loverdisc.jpg') !important;
+}
+
 .disk.play {
   animation-play-state: running;
 }
@@ -254,6 +352,34 @@ main {
   height: 46px;
   border-radius: 50%;
   background: #34a649bb;
+}
+
+#diskf1::before {
+  background: #8e720eb2;
+}
+
+#disksn::before {
+  background: rgba(143, 36, 143, 0.736);
+  top: 49.5%;
+  left: 50.5%;
+}
+
+#diskred::before {
+  background: rgba(142, 8, 8, 0.805);
+  width: 55px;
+  height: 55px;
+}
+
+#disknine::before {
+  background: rgba(29, 127, 202, 0.733);;
+}
+
+#diskrep::before {
+  background: rgb(72, 72, 72);
+}
+
+#disklover::before {
+  background: rgba(241, 36, 135, 0.498);
 }
 
 .song-slider {
@@ -279,6 +405,54 @@ main {
   height: 15px;
   border-radius: 50%;
   box-shadow: -400px 0 0 400px #247332f9;
+}
+
+#seek-barf {
+  background: #8e720eb2;
+}
+
+#seek-barf::-webkit-slider-thumb {
+  box-shadow: -400px 0 0 400px #5b4805b2;;
+}
+
+#seek-barsn {
+  background: rgba(143, 36, 143, 0.736);
+}
+
+#seek-barsn::-webkit-slider-thumb {
+  box-shadow: -400px 0 0 400px rgba(95, 28, 95, 0.845);
+}
+
+#seek-barred {
+  background: rgba(142, 8, 8, 0.805);
+}
+
+#seek-barred::-webkit-slider-thumb {
+  box-shadow: -400px 0 0 400px rgba(83, 5, 5, 0.805);
+}
+
+#seek-barnine {
+  background: rgba(29, 127, 202, 0.733);
+}
+
+#seek-barnine::-webkit-slider-thumb {
+  box-shadow: -400px 0 0 400px rgba(9, 72, 119, 0.733);
+}
+
+#seek-barrep {
+  background: rgb(72, 72, 72);
+}
+
+#seek-barrep::-webkit-slider-thumb {
+  box-shadow: -400px 0 0 400px rgb(34, 34, 34);
+}
+
+#seek-barlover {
+  background: rgba(241, 36, 135, 0.498);
+}
+
+#seek-barlover::-webkit-slider-thumb {
+  box-shadow: -400px 0 0 400px rgba(199, 44, 119, 0.654);
 }
 
 .current-time, .song-duration {
@@ -327,6 +501,31 @@ main {
   background: #34a649bb;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
+
+#play-btnf span, #backwardf span, #forwardf span {
+  background: #948435cb;
+}
+
+#play-btnsn span, #forwardsn span, #backwardsn span {
+  background: rgba(143, 36, 143, 0.736);
+}
+
+#play-btnred span, #forwardred span, #backwardred span {
+  background: rgba(142, 8, 8, 0.805);;
+}
+
+#play-btnnine span, #forwardnine span, #backwardnine span {
+  background: rgba(29, 127, 202, 0.733);;
+}
+
+#play-btnrep span, #forwardrep span, #backwardrep span {
+  background: rgb(72, 72, 72);
+}
+
+#play-btnlover span, #forwardlover span, #backwardlover span {
+  background: rgba(241, 36, 135, 0.498);
+}
+
 
 .backward span {
   position: absolute;
@@ -448,6 +647,30 @@ img {
   background-color: rgba(63, 110, 71, 0.536);
   color: white;
   transform: rotateY(180deg);
+}
+
+#flip-card-backf {
+  background-color: #7a691391;
+}
+
+#flip-card-backsn {
+  background-color: #64137a91;
+}
+
+#flip-card-backred {
+  background-color: #6f0b0b91;
+}
+
+#flip-card-backnine {
+  background-color: #10427b91;
+}
+
+#flip-card-backrep {
+  background-color: #313131ba;
+}
+
+#flip-card-backlover {
+  background-color: rgba(241, 36, 135, 0.444);
 }
 
 .flip-card-back > p {
