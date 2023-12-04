@@ -16,6 +16,7 @@
     100% {font-size: 25px;}
 }
 
+
 nav, .navbar {
     font-size: 20px;
     display: grid;
@@ -35,6 +36,11 @@ nav li {
 
 .navbar {
     grid-template-columns: min-content min-content min-content;
+}
+
+#bottomnav {
+    height: fit-content;
+    width: fit-content;
 }
 
 nav a {
@@ -75,9 +81,7 @@ nav a {
 }
 
 .fa.fa-spotify, .fa.fa-youtube-play, .fa.fa-apple {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 40px;
+    margin: 10px;
 }
 
 #currentpage {
@@ -93,6 +97,22 @@ body {
     font-size: 30px;
     letter-spacing: 2px;
     text-align: center;
+}
+
+a[href="#skip"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    border: solid 3px white;
+    transform: translateY(-100%);
+}
+  
+a[href="#skip"]:focus {
+    transform: translateY(0%);
+    font-size: 17px;
+    top: 75px;
+    z-index: 300;
 }
 
 header {
@@ -157,6 +177,7 @@ div {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     filter: saturate(120%);
+    text-align: center;
 }
 
 @font-face {
@@ -331,7 +352,7 @@ div {
     font-family: 'evermore';
     font-weight: normal;
     font-style: italic;
-    color: grey;
+    color: rgb(89, 89, 89);
     font-size: 45px;
     -webkit-text-stroke: 0.3px black;
 }
@@ -524,9 +545,20 @@ img {
     grid-row: 2 / span 1;
 }
 
-
 div > img {
     position: relative;
+}
+
+.topnav a:focus {
+    border: 2px solid white;
+}
+
+.three a:nth-child(even):focus {
+    border: 4px solid white;
+}
+
+.navbar a:focus {
+    border: 2px solid white;
 }
 
 @media only screen and (min-width: 600px) {
@@ -786,10 +818,6 @@ div > img {
 
 }
 
-
-.main {
-    display: none;
-}
 
 @media (prefers-reduced-motion: reduce) {
 
