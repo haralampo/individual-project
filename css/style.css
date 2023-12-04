@@ -41,6 +41,39 @@ nav a {
     padding: 10px;
 }
 
+.topnav {
+    padding-top: 30px;
+}
+
+#myLinks { 
+    display: none; 
+    line-height: 5px;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    left: 0;
+    top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.currentpage {
+    background-color: #04AA6D;
+    color: white;
+}
+
 .fa.fa-spotify, .fa.fa-youtube-play, .fa.fa-apple {
     margin-left: 10px;
     margin-right: 10px;
@@ -59,6 +92,7 @@ body {
 
     font-size: 30px;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 header {
@@ -72,13 +106,12 @@ header {
 }
 
 h1 {
-    font-size: 70px;
-    margin-top: 20px;
-    margin-left: 80px;
-    z-index: 1;
-    position: absolute;
-    text-shadow: 0 0 3px black;
+    font-size: 40px;
+}
 
+h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
 }
 
 main {
@@ -88,7 +121,6 @@ main {
 
 p {
     font-size: 20px;
-    text-indent: 50px;
     line-height: 40px;
     margin: 50px;
     width: fit-content;
@@ -97,8 +129,8 @@ p {
 }
 
 #message {
-    text-indent: 0px;
-    margin-left: 35%;
+    margin: auto;
+    padding-bottom: 30px;
 }
 
 div {
@@ -110,28 +142,21 @@ div {
 .one {
     grid-row: 1 / span 1;
     display: block;
+    text-align: center;
 }
 
 .two {
     grid-row: 2 / span 1;
     display: block;
+    justify-content: center;
 }
 
 .three {
     grid-row: 3 / span 1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     filter: saturate(120%);
-}
-
-h2 {
-    font-size: 25px;
-    text-shadow: 0 0 3px black;
-    margin: 30px;
-    margin-top: 95px;
-    margin-left: 130px;
-    z-index: 1;
-    position: absolute;
 }
 
 @font-face {
@@ -223,7 +248,7 @@ h2 {
     font-style: normal;
     font-display: swap;
 }
-  
+
 
 #debut {
     font-family: 'debut';
@@ -331,7 +356,7 @@ h2 {
 }
 
 
-  
+
 
 
 img {
@@ -355,25 +380,25 @@ img {
     position: relative; /* define context for absolutly positioned children */
     top: 10px;
 }
-  
 
 
 
 
-  
-  .ts1:hover #debut, .ts2:hover #fearless, .ts3:hover #speaknow, .ts4:hover #red, .ts5:hover #nine, 
+
+
+.ts1:hover #debut, .ts2:hover #fearless, .ts3:hover #speaknow, .ts4:hover #red, .ts5:hover #nine, 
     .ts6:hover #rep, .ts7:hover #lover, .ts8:hover #folklore, .ts9:hover #evermore, .ts10:hover #midnights {
     opacity: 1;
 
 
-  
+
     z-index: 9999; /* only works when position is defined */ 
     /* think of a stack of paper... this element is now 5 higher than the bottom */
-  
+
 
     transform: rotate(-90deg) scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     transition: transform 1s;
-  }
+}
 
 
 
@@ -387,7 +412,7 @@ img {
     transition: transform 1s; /* Animation */
     z-index: 20;
 }
-  
+
 
 .ts2:hover img {
     transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
@@ -471,45 +496,32 @@ img {
 }
 
 
-.ts1 {
+.ts1, .ts6 {
     grid-column: 1 / span 1;
 }
 
-.ts2 {
+.ts2, .ts7 {
     grid-column: 2 / span 1;
 }
 
-.ts3 {
+.ts3, .ts8 {
     grid-column: 3 / span 1;
 }
 
-.ts4 {
+.ts4, .ts9 {
     grid-column: 4 / span 1;
 }
 
-.ts5 {
+.ts5, .ts10 {
     grid-column: 5 / span 1;
 }
 
-.ts6 {
-    grid-column: 6 / span 1;
+.ts1, .ts2, .ts3, .ts4, .ts5 {
+    grid-row: 1 / span 1;
 }
 
-.ts7 {
-    grid-column: 7 / span 1;
-}
-
-.ts8 {
-    grid-column: 8 / span 1;
-}
-
-.ts9 {
-    grid-column: 9 / span 1;
-}
-
-.ts10 {
-    grid-column: 10 / span 1;
-    display: grid;
+.ts6, .ts7, .ts8, .ts9, .ts10 {
+    grid-row: 2 / span 1;
 }
 
 
@@ -517,6 +529,262 @@ div > img {
     position: relative;
 }
 
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 50px;
+        margin-top: 20px;
+        margin-left: 20px;
+        z-index: 1;
+        text-shadow: 0 0 3px black, 0 0 3px black;
+        position: absolute;
+    }
+    
+    h2 {
+        font-size: 25px;
+        text-shadow: 0 0 3px black, 0 0 3px black;
+        margin: 30px;
+        margin-top: 75px;
+        margin-left: 32px;
+        z-index: 1;
+        position: absolute;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 70px;
+        margin-left: 30px;
+        margin-top: 150px;
+    }
+    
+    h2 {
+        font-size: 25px;
+        margin-left: 75px;
+        margin-top: 230px;
+    }
+
+    #myLinks { 
+        display: contents; 
+        font-size: 20px;
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        display: none;
+    }
+
+    .topnav {
+        padding-top: 5px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .topnav a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .three {
+        grid-row: 3 / span 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        filter: saturate(120%);
+    }
+
+
+
+
+    img {
+        width:142.3px;
+        height:466.66px;
+        object-fit: cover;
+        position: relative;
+    }
+
+
+
+
+
+    #debut, #fearless, #speaknow, #red, #nine, #rep, #lover, #folklore, #evermore, #midnights {
+        position: absolute; /* position based on boundery created by nearest relative ancestor */
+        z-index: -100;
+        transform: rotate(-90deg);
+    }
+
+    .ts1, .ts2, .ts3, .ts4, .ts5, .ts6, .ts7, .ts8, .ts9, .ts10 {
+        position: relative; /* define context for absolutly positioned children */
+        top: 10px;
+        grid-row: 1 / span 1;
+    }
+
+
+
+
+
+
+    .ts1:hover #debut, .ts2:hover #fearless, .ts3:hover #speaknow, .ts4:hover #red, .ts5:hover #nine, 
+        .ts6:hover #rep, .ts7:hover #lover, .ts8:hover #folklore, .ts9:hover #evermore, .ts10:hover #midnights {
+        opacity: 1;
+
+
+
+        z-index: 9999; /* only works when position is defined */ 
+        /* think of a stack of paper... this element is now 5 higher than the bottom */
+
+
+        transform: rotate(-90deg) scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transition: transform 1s;
+    }
+
+
+
+
+
+    .ts1:hover img {
+        transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform-origin: 50% 100%;;
+        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+        filter: blur(4px) sepia() saturate(100%) hue-rotate(60deg);
+        transition: transform 1s; /* Animation */
+        z-index: 20;
+    }
+
+
+    .ts2:hover img {
+        transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform-origin: 50% 100%;
+        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+        filter: blur(4px) sepia() saturate(100%) hue-rotate(5deg);
+        transition: transform 1s; /* Animation */
+        z-index: 20;
+    }
+
+    .ts3:hover img {
+        transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform-origin: 50% 100%;
+        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+        filter: blur(4px) sepia() saturate(100%) hue-rotate(220deg);
+        transition: transform 1s; /* Animation */
+        z-index: 20;
+    }
+
+    .ts4:hover img {
+        transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform-origin: 50% 100%;
+        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+        filter: blur(4px) sepia() saturate(100%) hue-rotate(310deg);
+        transition: transform 1s; /* Animation */
+        z-index: 20;
+    }
+
+    .ts5:hover img {
+        transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform-origin: 50% 100%;
+        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+        filter: blur(4px) sepia() saturate(100%) hue-rotate(170deg);
+        transition: transform 1s; /* Animation */
+        z-index: 20;
+    }
+
+    .ts6:hover img {
+        transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform-origin: 50% 100%;
+        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+        filter: blur(4px);
+        transition: transform 1s; /* Animation */
+        z-index: 20;
+    }
+
+    .ts7:hover img {
+        transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform-origin: 50% 100%;
+        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+        filter: blur(4px) sepia() saturate(100%) hue-rotate(280deg);
+        transition: transform 1s; /* Animation */
+        z-index: 20;
+    }
+
+    .ts8:hover img {
+        transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform-origin: 50% 100%;
+        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+        filter: blur(4px);
+        transition: transform 1s; /* Animation */
+        z-index: 20;
+    }
+
+    .ts9:hover img {
+        transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform-origin: 50% 100%;
+        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+        filter: blur(4px) sepia() saturate(100%) hue-rotate(340deg);
+        transition: transform 1s; /* Animation */
+        z-index: 20;
+    }
+
+    .ts10:hover img {
+        transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform-origin: 50% 100%;
+        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+        filter: blur(4px) sepia() saturate(100%) hue-rotate(200deg);
+        transition: transform 1s; /* Animation */
+        z-index: 20;
+    }
+
+
+    .ts1 {
+        grid-column: 1 / span 1;
+    }
+
+    .ts2 {
+        grid-column: 2 / span 1;
+    }
+
+    .ts3 {
+        grid-column: 3 / span 1;
+    }
+
+    .ts4 {
+        grid-column: 4 / span 1;
+    }
+
+    .ts5 {
+        grid-column: 5 / span 1;
+    }
+
+    .ts6 {
+        grid-column: 6 / span 1;
+    }
+
+    .ts7 {
+        grid-column: 7 / span 1;
+    }
+
+    .ts8 {
+        grid-column: 8 / span 1;
+    }
+
+    .ts9 {
+        grid-column: 9 / span 1;
+    }
+
+    .ts10 {
+        grid-column: 10 / span 1;
+        display: grid;
+    }
+
+
+    div > img {
+        position: relative;
+    }
+
+}
 
 
 .main {
