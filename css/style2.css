@@ -139,7 +139,7 @@ main {
 }
 
 #loverdiv1 {
-  background-image: url(../images/loverback.JPG);
+  background-image: url(../images/loverback.jpg);
   display: flex;
   flex-direction: row;
   justify-content: center;
