@@ -101,74 +101,96 @@ main {
     background-size: cover; /* or "contain" depending on what you want */
     background-position: center center;
     background-repeat: no-repeat;
+    overflow: hidden;
+    justify-content: space-between;
+  align-content: space-between;
+  overflow: hidden;
 }
 
 #fearlessdiv1 {
   background-image: url(../images/fback.JPG);
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  overflow: hidden;
 }
 
 #speaknowdiv1 {
   background-image: url(../images/snback4.jpg);
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  overflow: hidden;
 }
 
 #reddiv1 {
   background-image: url(../images/redback.jpg);
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  overflow: hidden;
 }
 
 #ninediv1 {
   background-image: url(../images/nineback9.jpg);
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  overflow: hidden;
 }
 
 #repdiv1 {
   background-image: url(../images/repback.jpeg);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  overflow: hidden;
+    justify-content: space-between;
+  align-content: space-between;
+  overflow: hidden;
 }
 
 #loverdiv1 {
   background-image: url(../images/loverback.jpg);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  overflow: hidden;
+    justify-content: space-between;
+  align-content: space-between;
+  overflow: hidden;
 }
 
 #folklorediv1 {
   background-image: url(../images/folkloreback.jpg);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  overflow: hidden;
+    justify-content: space-between;
+  align-content: space-between;
+  overflow: hidden;
 }
 
 #evermorediv1 {
   background-image: url(../images/evermoreback.jpg);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  overflow: hidden;
+    justify-content: space-between;
+  align-content: space-between;
+  overflow: hidden;
 }
 
 #midnightsdiv1 {
   background-image: url(../images/midnightsback.jpg);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  overflow: hidden;
+    justify-content: space-between;
+  align-content: space-between;
+  overflow: hidden;
 }
 
 figure {
-  padding: 80px;
   overflow: visible;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -231,7 +253,6 @@ figure {
 
  p {
   font-size: 20px;
-  text-indent: 50px;
   line-height: 40px;
   margin: 50px;
   width: fit-content;
@@ -240,7 +261,7 @@ figure {
 }
 
 figcaption {
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -284,8 +305,14 @@ figcaption {
 }
 
 .img1, .img2, .img3 {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+#image1, #image2 {
+  width: 200px;
+  height: 200px;
   margin: auto;
 }
 
@@ -830,12 +857,26 @@ img {
     margin: auto auto;
   }
 
+  #image1, #image2 {
+    width: 250px;
+    height: 250px;
+  }
+
+  figcaption {
+    font-size: 20px;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
 
   main {
     grid-template-rows: 500px auto 550px auto 600px;
+  }
+
+  #image1, #image2 {
+    width: 300px;
+    height: 300px;
   }
 
   .div3 {
