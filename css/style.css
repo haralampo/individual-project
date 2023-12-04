@@ -98,6 +98,8 @@ body {
     font-size: 30px;
     letter-spacing: 2px;
     text-align: center;
+
+    overflow-x: hidden;
 }
 
 a[href="#skip"] {
@@ -650,15 +652,12 @@ div > img {
         transform: rotate(-90deg);
     }
 
+
     .ts1, .ts2, .ts3, .ts4, .ts5, .ts6, .ts7, .ts8, .ts9, .ts10 {
         position: relative; /* define context for absolutly positioned children */
         top: 10px;
         grid-row: 1 / span 1;
     }
-
-
-
-
 
 
     .ts1:hover #debut, .ts2:hover #fearless, .ts3:hover #speaknow, .ts4:hover #red, .ts5:hover #nine, 
