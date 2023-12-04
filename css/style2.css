@@ -836,8 +836,10 @@ img {
   background-color: rgba(2, 12, 156, 0.897);
 }
 
-.flip-card-back > p {
-  margin-top: 70px;
+.flip-card-back p {
+  margin: 40% 15px;
+  font-size: 15px;
+  line-height: 20px;
   text-indent: 0px;
 }
 
@@ -866,6 +868,13 @@ img {
     font-size: 20px;
   }
 
+  .flip-card-back p {
+    margin: 32% 30px;
+    font-size: 16px;
+    line-height: 23px;
+    text-indent: 0px;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -886,6 +895,13 @@ img {
   .flip-card {
     width: 300px;
     height: 400px;
+  }
+
+  .flip-card-back p {
+    margin: 30% 50px;
+    font-size: 20px;
+    line-height: 28px;
+    text-indent: 0px;
   }
 
 }
