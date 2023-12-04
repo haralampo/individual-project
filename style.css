@@ -1,0 +1,532 @@
+@keyframes current {
+    /* current page in nav bar changes colors */
+    0%   {background-color:rgb(145, 221, 249)}
+    25%  {background-color:rgb(66, 163, 247)}
+    50%  {background-color:rgb(145, 221, 249)}
+    75%  {background-color:rgb(66, 163, 247)}
+    100% {background-color:rgb(145, 221, 249)}
+}
+
+@keyframes header2 {
+    /* header (ex. name of pet) grows and shrinks */
+    0%   {font-size: 25px;}
+    25%  {font-size: 20px;}
+    50%  {font-size: 25px;}
+    75%  {font-size: 20px;}
+    100% {font-size: 25px;}
+}
+
+nav, .navbar {
+    font-size: 20px;
+    display: grid;
+    /* "Pets", "Travel", "Recipes" */
+    padding: 5px;
+    margin: 15px;
+    border-radius: 10px;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.navbar {
+    grid-template-columns: min-content min-content min-content;
+}
+
+nav a {
+    padding: 10px;
+}
+
+.fa.fa-spotify, .fa.fa-youtube-play, .fa.fa-apple {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+#currentpage {
+    text-decoration: underline white;
+} 
+
+body {
+    scroll-behavior: smooth;
+    background-color: #1038a69d;
+    font-family: 'YummyCupcakes';
+    color: white;
+
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+header {
+    height: 100px;
+}
+
+.headerpic {
+    display: block;
+    width: 100%;
+    z-index: 0;
+}
+
+h1 {
+    font-size: 70px;
+    margin-top: 20px;
+    margin-left: 80px;
+    z-index: 1;
+    position: absolute;
+    text-shadow: 0 0 3px black;
+
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+p {
+    font-size: 20px;
+    text-indent: 50px;
+    line-height: 40px;
+    margin: 50px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+#message {
+    text-indent: 0px;
+    margin-left: 35%;
+}
+
+div {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.one {
+    grid-row: 1 / span 1;
+    display: block;
+}
+
+.two {
+    grid-row: 2 / span 1;
+    display: block;
+}
+
+.three {
+    grid-row: 3 / span 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    filter: saturate(120%);
+}
+
+h2 {
+    font-size: 25px;
+    text-shadow: 0 0 3px black;
+    margin: 30px;
+    margin-top: 95px;
+    margin-left: 130px;
+    z-index: 1;
+    position: absolute;
+}
+
+@font-face {
+    font-family: 'debut';
+    src: url('../fonts/debut/Satisfaction.woff2') format('woff2'),
+        url('../fonts/debut/Satisfaction.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bellet';
+    src: url('../fonts/fearless/Bellet-Regular.woff2') format('woff2'),
+        url('../fonts/fearless/Bellet-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Vevet - Demo';
+    src: url('../fonts/speaknow/RedVevet.woff2') format('woff2'),
+        url('../fonts/speaknow/RedVevet.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Anguita Sans Medium It';
+    src: url('../fonts/red/AnguitaSans-MediumIt.woff2') format('woff2'),
+        url('../fonts/red/AnguitaSans-MediumIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TaylorSwiftHandwriting';
+    src: url('../fonts/1989/TaylorSwiftHandwriting.woff2') format('woff2'),
+        url('../fonts/1989/TaylorSwiftHandwriting.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Olde English';
+    src: url('../fonts/reputation/EngraversOldEnglishBT-Regular.woff2') format('woff2'),
+        url('../fonts/reputation/EngraversOldEnglishBT-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Love';
+    src: url('../fonts/lover/Love.woff2') format('woff2'),
+        url('../fonts/lover/Love.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'evermore';
+    src: url('../fonts/folklore/IM_FELL_DW_Pica_Italic.woff2') format('woff2'),
+        url('../fonts/folklore/IM_FELL_DW_Pica_Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/midnights/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/midnights/Inter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YummyCupcakes';
+    src: url('../fonts/overall/YummyCupcakes.woff2') format('woff2'),
+        url('../fonts/overall/YummyCupcakes.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+  
+
+#debut {
+    font-family: 'debut';
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(56, 183, 39);
+    white-space: nowrap;
+    padding-bottom: 30px;
+    font-size: 25px;
+    -webkit-text-stroke: 0.3px black;
+}
+
+#fearless {
+    font-family: 'Bellet';
+    font-weight: normal;
+    font-style: normal;
+    color: rgb(224, 191, 0);
+    white-space: nowrap;
+    font-size: 30px;
+    padding-bottom: 20px;
+    -webkit-text-stroke: 0.3px black;
+}
+
+#speaknow {
+    font-family: 'Red Vevet - Demo';
+    font-style: normal;
+    font-weight: 200px;
+    color: rgb(142, 43, 217);
+    white-space: nowrap;
+    font-size: 30px;
+    padding-bottom: 30px;
+    -webkit-text-stroke: 0.3px black;
+
+}
+
+    
+
+#red {
+    font-family: 'Anguita Sans Medium It';
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(166, 21, 21);
+    font-size: 60px;
+    padding-top: 20px;
+    -webkit-text-stroke: 0.3px black;
+}
+
+#nine {
+    font-family: 'TaylorSwiftHandwriting';
+    font-style: normal;
+    color: rgb(66, 211, 255);
+    font-size: 55px;
+    padding-top: 35px;
+    -webkit-text-stroke: 0.3px black;
+}
+
+#rep {
+    font-family: 'Olde English';
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(234, 227, 227, 0.922);
+    font-size: 45px;
+    padding-bottom: 40px;
+    -webkit-text-stroke: 0.3px black;
+}
+
+#lover {
+    font-family: 'Love';
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5px;
+    color: rgb(255, 115, 176);
+    font-size: 60px;
+    padding-top: 12px;
+    font-weight: 575;
+    -webkit-text-stroke: 0.3px black;
+}
+
+#folklore {
+    font-family: 'evermore';
+    font-weight: normal;
+    font-style: italic;
+    color: grey;
+    font-size: 45px;
+    -webkit-text-stroke: 0.3px black;
+}
+
+#evermore {
+    font-family: 'evermore';
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(201, 127, 0);
+    font-size: 45px;
+    padding-bottom: 20px;
+    -webkit-text-stroke: 0.3px black;
+}
+
+#midnights {
+    font-family: 'Inter';
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(12, 34, 159);
+    padding-bottom: 20px;
+    -webkit-text-stroke: 0.3px black;
+}
+
+
+  
+
+
+img {
+    width:142.3px;
+    height:466.66px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+
+
+
+#debut, #fearless, #speaknow, #red, #nine, #rep, #lover, #folklore, #evermore, #midnights {
+    position: absolute; /* position based on boundery created by nearest relative ancestor */
+    z-index: -100;
+    transform: rotate(-90deg);
+}
+
+.ts1, .ts2, .ts3, .ts4, .ts5, .ts6, .ts7, .ts8, .ts9, .ts10 {
+    position: relative; /* define context for absolutly positioned children */
+    top: 10px;
+}
+  
+
+
+
+
+  
+  .ts1:hover #debut, .ts2:hover #fearless, .ts3:hover #speaknow, .ts4:hover #red, .ts5:hover #nine, 
+    .ts6:hover #rep, .ts7:hover #lover, .ts8:hover #folklore, .ts9:hover #evermore, .ts10:hover #midnights {
+    opacity: 1;
+
+
+  
+    z-index: 9999; /* only works when position is defined */ 
+    /* think of a stack of paper... this element is now 5 higher than the bottom */
+  
+
+    transform: rotate(-90deg) scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition: transform 1s;
+  }
+
+
+
+
+
+.ts1:hover img {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform-origin: 50% 100%;;
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px) sepia() saturate(100%) hue-rotate(60deg);
+    transition: transform 1s; /* Animation */
+    z-index: 20;
+}
+  
+
+.ts2:hover img {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform-origin: 50% 100%;
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px) sepia() saturate(100%) hue-rotate(5deg);
+    transition: transform 1s; /* Animation */
+    z-index: 20;
+}
+
+.ts3:hover img {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform-origin: 50% 100%;
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px) sepia() saturate(100%) hue-rotate(220deg);
+    transition: transform 1s; /* Animation */
+    z-index: 20;
+}
+
+.ts4:hover img {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform-origin: 50% 100%;
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px) sepia() saturate(100%) hue-rotate(310deg);
+    transition: transform 1s; /* Animation */
+    z-index: 20;
+}
+
+.ts5:hover img {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform-origin: 50% 100%;
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px) sepia() saturate(100%) hue-rotate(170deg);
+    transition: transform 1s; /* Animation */
+    z-index: 20;
+}
+
+.ts6:hover img {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform-origin: 50% 100%;
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+    transition: transform 1s; /* Animation */
+    z-index: 20;
+}
+
+.ts7:hover img {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform-origin: 50% 100%;
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px) sepia() saturate(100%) hue-rotate(280deg);
+    transition: transform 1s; /* Animation */
+    z-index: 20;
+}
+
+.ts8:hover img {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform-origin: 50% 100%;
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+    transition: transform 1s; /* Animation */
+    z-index: 20;
+}
+
+.ts9:hover img {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform-origin: 50% 100%;
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px) sepia() saturate(100%) hue-rotate(340deg);
+    transition: transform 1s; /* Animation */
+    z-index: 20;
+}
+
+.ts10:hover img {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform-origin: 50% 100%;
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px) sepia() saturate(100%) hue-rotate(200deg);
+    transition: transform 1s; /* Animation */
+    z-index: 20;
+}
+
+
+.ts1 {
+    grid-column: 1 / span 1;
+}
+
+.ts2 {
+    grid-column: 2 / span 1;
+}
+
+.ts3 {
+    grid-column: 3 / span 1;
+}
+
+.ts4 {
+    grid-column: 4 / span 1;
+}
+
+.ts5 {
+    grid-column: 5 / span 1;
+}
+
+.ts6 {
+    grid-column: 6 / span 1;
+}
+
+.ts7 {
+    grid-column: 7 / span 1;
+}
+
+.ts8 {
+    grid-column: 8 / span 1;
+}
+
+.ts9 {
+    grid-column: 9 / span 1;
+}
+
+.ts10 {
+    grid-column: 10 / span 1;
+    display: grid;
+}
+
+
+div > img {
+    position: relative;
+}
+
+
+
+.main {
+    display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    h2 {
+        animation: none;
+    }
+
+}
