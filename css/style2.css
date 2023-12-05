@@ -88,6 +88,8 @@ body {
   letter-spacing: 2px;
   text-align: center;
   overflow: auto;
+
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
 
 main {
@@ -207,7 +209,7 @@ figure {
 
  body {
   scroll-behavior: smooth;
-  background-color: #34a649bb;
+  background-color: #10501dd1;
   font-family: 'YummyCupcakes';
   color: white;
   font-size: 30px;
@@ -215,39 +217,39 @@ figure {
 }
 
 .bodyf {
-  background-color: #8e720eb2;
+  background-color: #695613d8;
 }
 
 .bodysn {
-  background-color: rgba(143, 36, 143, 0.736);
+  background-color: rgba(96, 13, 96, 0.835);
 }
 
 .bodyred {
-  background-color: rgba(142, 8, 8, 0.805);
+  background-color: rgba(103, 5, 5, 0.862);
 }
 
 .bodynine {
-  background-color: rgba(29, 127, 202, 0.733);
+  background-color: rgba(14, 80, 131, 0.716);
 }
 
 .bodyrep {
-  background-color: rgb(72, 72, 72);
+  background-color: rgba(54, 54, 54, 0.952);
 }
 
 .bodylover {
-  background-color: rgba(241, 36, 135, 0.498);
+  background-color: rgba(161, 40, 100, 0.759);
 }
 
 .bodyfolklore {
-  background-color: grey;
+  background-color: rgb(98, 98, 98);
 }
 
 .bodyevermore {
-  background-color: rgba(186, 87, 11, 0.821);
+  background-color: rgba(128, 60, 8, 0.786);
 }
 
 .bodymidnights {
-  background-color: rgba(16, 25, 151, 0.897);
+  background-color: rgba(6, 8, 81, 0.882);
 }
 
 
@@ -377,7 +379,7 @@ figcaption {
   font-size: 20px;
   margin-top: -15px;
   padding-right: 0px;
-  -webkit-text-stroke: 0.1px black;
+  -webkit-text-stroke: 0.1px white;
   text-indent: 0px;
   line-height: 0px;
   margin: 0px;
@@ -392,7 +394,7 @@ figcaption {
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  background: black;
+  background: white;
   background-image: url('../musicimages/cover1.png');
   background-size: cover;
   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
@@ -790,26 +792,26 @@ img {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
-  color: black;
+  color: white;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgba(63, 110, 71, 0.536);
+  background-color: rgba(39, 80, 47, 0.749);
   color: white;
   transform: rotateY(180deg);
 }
 
 #flip-card-backf {
-  background-color: #7a691391;
+  background-color: #54480db2;
 }
 
 #flip-card-backsn {
-  background-color: #64137a91;
+  background-color: #4a0b5bb0;
 }
 
 #flip-card-backred {
-  background-color: #6f0b0b91;
+  background-color: #500909c2;
 }
 
 #flip-card-backnine {
@@ -817,23 +819,23 @@ img {
 }
 
 #flip-card-backrep {
-  background-color: #313131ba;
+  background-color: #313131d6;
 }
 
 #flip-card-backlover {
-  background-color: rgba(241, 36, 135, 0.444);
+  background-color: rgba(136, 13, 72, 0.444);
 }
 
 #flip-card-backfolklore {
-  background-color: rgb(105, 105, 105);
+  background-color: rgba(66, 66, 66, 0.892);
 }
 
 #flip-card-backevermore {
-  background-color: rgba(168, 78, 9, 0.631);
+  background-color: rgba(128, 65, 17, 0.903);
 }
 
 #flip-card-backmidnights {
-  background-color: rgba(2, 12, 156, 0.897);
+  background-color: rgba(8, 12, 68, 0.611);
 }
 
 .flip-card-back p {
@@ -869,7 +871,7 @@ img {
   }
 
   .flip-card-back p {
-    margin: 32% 30px;
+    margin: 30% 30px;
     font-size: 16px;
     line-height: 23px;
     text-indent: 0px;
