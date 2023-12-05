@@ -191,7 +191,10 @@ div {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     filter: saturate(120%);
-    text-align: center;
+}
+
+.three div {
+    justify-content: center;
 }
 
 @font-face {
@@ -291,7 +294,6 @@ div {
     font-style: normal;
     color: rgb(56, 183, 39);
     white-space: nowrap;
-    padding-bottom: 30px;
     font-size: 25px;
     -webkit-text-stroke: 0.3px white;
 }
@@ -303,7 +305,6 @@ div {
     color: rgb(224, 191, 0);
     white-space: nowrap;
     font-size: 30px;
-    padding-bottom: 20px;
     -webkit-text-stroke: 0.3px white;
 }
 
@@ -314,9 +315,7 @@ div {
     color: rgb(142, 43, 217);
     white-space: nowrap;
     font-size: 30px;
-    padding-bottom: 30px;
     -webkit-text-stroke: 0.1px white;
-
 }
 
     
@@ -327,7 +326,6 @@ div {
     font-style: normal;
     color: rgb(166, 21, 21);
     font-size: 60px;
-    padding-top: 20px;
     -webkit-text-stroke: 0.3px white;
 }
 
@@ -336,7 +334,6 @@ div {
     font-style: normal;
     color: rgb(66, 211, 255);
     font-size: 55px;
-    padding-top: 35px;
     -webkit-text-stroke: 0.3px white;
 }
 
@@ -345,8 +342,7 @@ div {
     font-weight: 500;
     font-style: normal;
     color: rgba(234, 227, 227, 0.922);
-    font-size: 45px;
-    padding-bottom: 40px;
+    font-size: 40px;
     -webkit-text-stroke: 0.3px white;
 }
 
@@ -354,10 +350,8 @@ div {
     font-family: 'Love';
     font-weight: 400;
     font-style: normal;
-    margin-left: 5px;
     color: rgb(255, 115, 176);
     font-size: 60px;
-    padding-top: 12px;
     font-weight: 575;
     -webkit-text-stroke: 0.3px white;
 }
@@ -377,7 +371,6 @@ div {
     font-style: italic;
     color: rgb(201, 127, 0);
     font-size: 45px;
-    padding-bottom: 20px;
     -webkit-text-stroke: 0.3px white;
 }
 
@@ -386,8 +379,8 @@ div {
     font-weight: normal;
     font-style: italic;
     color: rgb(12, 34, 159);
-    padding-bottom: 20px;
     -webkit-text-stroke: 0.3px white;
+    right: -20px;
 }
 
 
@@ -571,8 +564,15 @@ div > img {
     border: 4px solid white;
 }
 
-.navbar a:focus {
+#debut:focus, #fearless:focus, #speaknow:focus, #red:focus, #nine:focus, 
+        #rep:focus, #lover:focus, #folklore:focus, #evermore:focus, #midnights:focus {
+    background-color: #ffffffd5;
     border: 2px solid white;
+    z-index: 9999;
+}
+
+#rep:focus {
+    color: #000000c8;
 }
 
 @media only screen and (min-width: 600px) {
