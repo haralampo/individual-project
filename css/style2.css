@@ -241,17 +241,7 @@ figure {
 }
 
 .bodynine {
-  background-color: #015AA2;
-  color: white;
-  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
-}
-
-.bodynine #currentpage {
-  text-decoration: underline white;
-} 
-
-.bodynine .music-player {
-  color: white;
+  background-color: #1174b1ae;
 }
 
 .bodyrep {
@@ -514,7 +504,7 @@ figcaption {
 }
 
 #disknine::before {
-  background: #015AA2;
+  background: #1174b1ae;
 }
 
 #diskrep::before {
@@ -587,11 +577,11 @@ figcaption {
 }
 
 #seek-barnine {
-  background: #015AA2;
+  background: #1174b1ae;
 }
 
 #seek-barnine::-webkit-slider-thumb {
-  box-shadow: -400px 0 0 400px rgba(5, 52, 87, 0.892);
+  box-shadow: -400px 0 0 400px #053e61ae;
 }
 
 #seek-barrep {
@@ -694,7 +684,7 @@ figcaption {
 }
 
 #play-btnnine span, #forwardnine span, #backwardnine span {
-  background: #015AA2;
+  background: #1174b1ae;
 }
 
 #play-btnrep span, #forwardrep span, #backwardrep span {
@@ -853,7 +843,7 @@ img {
 }
 
 #flip-card-backsn {
-  background-color: #910db544;
+  background-color: #910db538;
 }
 
 #flip-card-backred {
@@ -862,8 +852,7 @@ img {
 }
 
 #flip-card-backnine {
-  background-color: #00488393;
-  color: white;
+  background-color: #1174b179;
 }
 
 #flip-card-backrep {
