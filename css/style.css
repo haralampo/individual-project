@@ -44,12 +44,20 @@ nav li {
 
 .navbar {
     grid-template-columns: min-content min-content min-content;
+    display: inline-block;
 }
 
 #bottomnav {
     height: fit-content;
     width: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
 }
+
+.navbar a:focus {
+    border: 2px solid white;
+}
+
 
 nav a {
     padding: 10px;
@@ -89,10 +97,6 @@ nav a {
 .currentpage {
     background-color: #04AA6D;
     color: white;
-}
-
-.fa.fa-spotify, .fa.fa-youtube-play, .fa.fa-apple {
-    margin: 10px;
 }
 
 #currentpage {

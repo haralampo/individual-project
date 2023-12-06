@@ -40,7 +40,8 @@ a[href="#skip"] {
   top: 0;
   left: 0;
   padding: 10px;
-  border: solid 3px white;
+  color: white;
+  border: solid 2px white;
   transform: translateY(-100%);
 }
 
@@ -52,15 +53,15 @@ a[href="#skip"]:focus {
 }
 
 nav a:focus {
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
-.backward:focus, .play-btn.pause:focus, .play-btn.play:focus, .forward:focus {
-  border: 3px solid rgb(75, 75, 75);
+.backward:focus-visible, .play-btn:focus-visible, .forward:focus-visible {
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .navbar a:focus {
-  border: 2px solid white;
+  border: 2px solid black;
 }
 
 #bottomp {
@@ -75,21 +76,20 @@ nav a:focus {
 }
 
 #currentpage {
-  text-decoration: underline white;
+  text-decoration: underline black;
 } 
 
 body {
   scroll-behavior: smooth;
   background-color: #b823b5ba;
   font-family: 'YummyCupcakes';
-  color: white;
+  color: black;
 
   font-size: 30px;
   letter-spacing: 2px;
   text-align: center;
   overflow: auto;
 
-  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
 
 main {
@@ -209,47 +209,93 @@ figure {
 
  body {
   scroll-behavior: smooth;
-  background-color: #10501dd1;
+  background-color: #29a542a4;
   font-family: 'YummyCupcakes';
-  color: white;
+  color: black;
   font-size: 30px;
   letter-spacing: 2px;
+
 }
 
 .bodyf {
-  background-color: #695613d8;
+  background-color: #c2a642b7;
 }
 
 .bodysn {
-  background-color: rgba(96, 13, 96, 0.835);
+  background-color: rgba(196, 85, 196, 0.715);
 }
 
 .bodyred {
-  background-color: rgba(103, 5, 5, 0.862);
+  background-color: rgba(120, 12, 12, 0.892);
+  color: white;
+}
+
+.bodyred #currentpage {
+  text-decoration: underline white;
+} 
+
+.bodyred .music-player {
+  color: white;
 }
 
 .bodynine {
-  background-color: rgba(14, 80, 131, 0.716);
+  background-color: rgba(27, 107, 169, 0.8);
+  color: white;
+}
+
+.bodynine #currentpage {
+  text-decoration: underline white;
+} 
+
+.bodynine .music-player {
+  color: white;
 }
 
 .bodyrep {
   background-color: rgba(54, 54, 54, 0.952);
+  color: white;
+}
+
+.bodyrep #currentpage {
+  text-decoration: underline white;
+} 
+
+.bodyrep .music-player {
+  color: white;
 }
 
 .bodylover {
-  background-color: rgba(161, 40, 100, 0.759);
+  background-color: rgba(255, 135, 195, 0.731);
 }
 
 .bodyfolklore {
-  background-color: rgb(98, 98, 98);
+  background-color: rgba(128, 128, 128, 0.705);
 }
 
 .bodyevermore {
-  background-color: rgba(128, 60, 8, 0.786);
+  background-color: rgba(143, 56, 13, 0.854);
+  color: white;
+}
+
+.bodyevermore #currentpage {
+  text-decoration: underline white;
+} 
+
+.bodyevermore .music-player {
+  color: white;
 }
 
 .bodymidnights {
-  background-color: rgba(6, 8, 81, 0.882);
+  background-color: rgba(20, 24, 137, 0.934);
+  color: white;
+}
+
+.bodymidnights #currentpage {
+  text-decoration: underline white;
+} 
+
+.bodymidnights .music-player {
+  color: white;
 }
 
 
@@ -360,7 +406,7 @@ figcaption {
   background: rgb(255, 255, 255, 0.08);
   padding: 30px;
   overflow: hidden;
-  color: white;
+  color: black;
   margin-top: 60px;
 }
 
@@ -622,7 +668,7 @@ figcaption {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.806);
+  background: rgba(255, 255, 255, 0);
   cursor: pointer;
   border: none;
 }
@@ -770,8 +816,12 @@ img {
   transform-style: preserve-3d;
 }
 
+.flip-card:focus .flip-card-inner {
+  border: 2px solid black;
+}
+
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -798,7 +848,7 @@ img {
 /* Style the back side */
 .flip-card-back {
   background-color: rgba(39, 80, 47, 0.749);
-  color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 
@@ -812,14 +862,17 @@ img {
 
 #flip-card-backred {
   background-color: #500909c2;
+  color: white;
 }
 
 #flip-card-backnine {
   background-color: #10427b91;
+  color: white;
 }
 
 #flip-card-backrep {
   background-color: #313131d6;
+  color: white;
 }
 
 #flip-card-backlover {
@@ -832,10 +885,12 @@ img {
 
 #flip-card-backevermore {
   background-color: rgba(128, 65, 17, 0.903);
+  color: white;
 }
 
 #flip-card-backmidnights {
   background-color: rgba(8, 12, 68, 0.611);
+  color: white;
 }
 
 .flip-card-back p {
@@ -867,6 +922,7 @@ img {
   }
 
   figcaption {
+    color: white;
     font-size: 20px;
   }
 
