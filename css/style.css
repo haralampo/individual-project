@@ -586,8 +586,8 @@ div > img {
     border: 4px solid white;
 }
 
-#debut:focus, #fearless:focus, #speaknow:focus, #red:focus, #nine:focus, 
-        #rep:focus, #lover:focus, #folklore:focus, #evermore:focus, #midnights:focus {
+#debut:focus-visible, #fearless:focus-visible, #speaknow:focus-visible, #red:focus-visible, #nine:focus-visible, 
+        #rep:focus-visible, #lover:focus-visible, #folklore:focus-visible, #evermore:focus-visible, #midnights:focus-visible {
     background-color: #ffffffd5;
     border: 2px solid white;
     z-index: 9999;

@@ -41,6 +41,7 @@ a[href="#skip"] {
   left: 0;
   padding: 10px;
   color: white;
+  background-color: #0000008e;
   border: solid 2px white;
   transform: translateY(-100%);
 }
@@ -222,11 +223,11 @@ figure {
 }
 
 .bodysn {
-  background-color: rgba(196, 85, 196, 0.715);
+  background-color: #c455c4b6;
 }
 
 .bodyred {
-  background-color: rgba(120, 12, 12, 0.892);
+  background-color: rgba(120, 12, 12, 0.852);
   color: white;
   text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
@@ -240,7 +241,7 @@ figure {
 }
 
 .bodynine {
-  background-color: rgba(27, 107, 169, 0.8);
+  background-color: #065089b9;
   color: white;
   text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
@@ -290,7 +291,7 @@ figure {
 }
 
 .bodymidnights {
-  background-color: rgba(9, 34, 137, 0.919);
+  background-color: rgb(34, 53, 128);
   color: white;
   text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
@@ -408,7 +409,7 @@ figcaption {
   width: 350px;
   height: fit-content;
   border-radius: 20px;
-  background: rgb(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.191);
   padding: 30px;
   overflow: hidden;
   color: black;
@@ -503,47 +504,47 @@ figcaption {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: #34a649bb;
+  background: #29a542a4;
 }
 
 #diskf1::before {
-  background: #8e720eb2;
+  background: #c2a642b7;
 }
 
 #disksn::before {
-  background: rgba(143, 36, 143, 0.736);
+  background: #c455c4b6;
   top: 49.5%;
   left: 50.5%;
 }
 
 #diskred::before {
-  background: rgba(142, 8, 8, 0.805);
+  background: rgba(120, 12, 12, 0.852);
   width: 55px;
   height: 55px;
 }
 
 #disknine::before {
-  background: rgba(29, 127, 202, 0.733);;
+  background: #065089b9;
 }
 
 #diskrep::before {
-  background: rgb(72, 72, 72);
+  background: rgba(33, 33, 33, 0.933);
 }
 
 #disklover::before {
-  background: rgba(241, 36, 135, 0.498);
+  background: rgba(255, 135, 195, 0.731);
 }
 
 #diskfolklore::before {
-  background: grey;
+  background: rgba(128, 128, 128, 0.705);
 }
 
 #diskevermore::before {
-  background: rgba(186, 87, 11, 0.821);
+  background: rgba(143, 56, 13, 0.854);
 }
 
 #diskmidnights::before {
-  background: rgba(16, 25, 151, 0.897);
+  background: rgb(34, 53, 128);
 }
 
 .song-slider {
@@ -558,7 +559,7 @@ figcaption {
   width: 100%;
   height: 5px;
   border-radius: 10px;
-  background: #34a649bb;
+  background: #29a542a4;
   overflow: hidden;
   cursor: pointer;
 }
@@ -572,47 +573,47 @@ figcaption {
 }
 
 #seek-barf {
-  background: #8e720eb2;
+  background: #c2a642b7;
 }
 
 #seek-barf::-webkit-slider-thumb {
-  box-shadow: -400px 0 0 400px #5b4805b2;;
+  box-shadow: -400px 0 0 400px #806608ac;;
 }
 
 #seek-barsn {
-  background: rgba(143, 36, 143, 0.736);
+  background: #c455c4b6;
 }
 
 #seek-barsn::-webkit-slider-thumb {
-  box-shadow: -400px 0 0 400px rgba(95, 28, 95, 0.845);
+  box-shadow: -400px 0 0 400px rgba(139, 37, 139, 0.68);
 }
 
 #seek-barred {
-  background: rgba(142, 8, 8, 0.805);
+  background: rgba(120, 12, 12, 0.852);
 }
 
 #seek-barred::-webkit-slider-thumb {
-  box-shadow: -400px 0 0 400px rgba(83, 5, 5, 0.805);
+  box-shadow: -400px 0 0 400px rgb(80, 3, 3);
 }
 
 #seek-barnine {
-  background: rgba(29, 127, 202, 0.733);
+  background: #065089b9;
 }
 
 #seek-barnine::-webkit-slider-thumb {
-  box-shadow: -400px 0 0 400px rgba(9, 72, 119, 0.733);
+  box-shadow: -400px 0 0 400px rgba(5, 52, 87, 0.892);
 }
 
 #seek-barrep {
-  background: rgb(72, 72, 72);
+  background: rgba(33, 33, 33, 0.743);
 }
 
 #seek-barrep::-webkit-slider-thumb {
-  box-shadow: -400px 0 0 400px rgb(34, 34, 34);
+  box-shadow: -400px 0 0 400px rgba(0, 0, 0, 0.876);
 }
 
 #seek-barlover {
-  background: rgba(241, 36, 135, 0.498);
+  background: rgba(255, 135, 195, 0.731);
 }
 
 #seek-barlover::-webkit-slider-thumb {
@@ -620,7 +621,7 @@ figcaption {
 }
 
 #seek-barfolklore {
-  background: grey;
+  background: rgba(128, 128, 128, 0.705);
 }
 
 #seek-barfolklore::-webkit-slider-thumb {
@@ -628,19 +629,19 @@ figcaption {
 }
 
 #seek-barevermore {
-  background: rgba(186, 87, 11, 0.821);
+  background: rgba(143, 56, 13, 0.854);
 }
 
 #seek-barevermore::-webkit-slider-thumb {
-  box-shadow: -400px 0 0 400px rgba(138, 63, 6, 0.813);
+  box-shadow: -400px 0 0 400px rgba(88, 39, 2, 0.813);
 }
 
 #seek-barmidnights {
-  background: rgba(16, 25, 151, 0.897);;
+  background: rgb(34, 53, 128);
 }
 
 #seek-barmidnights::-webkit-slider-thumb {
-  box-shadow: -400px 0 0 400px rgba(2, 6, 61, 0.897);
+  box-shadow: -400px 0 0 400px rgb(11, 23, 70);
 }
 
 .current-time, .song-duration {
@@ -686,44 +687,44 @@ figcaption {
   width: 10px;
   height: 30px;
   border-radius: 2px;
-  background: #34a649bb;
+  background: #29a542a4;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 #play-btnf span, #backwardf span, #forwardf span {
-  background: #948435cb;
+  background: #c2a642b7;
 }
 
 #play-btnsn span, #forwardsn span, #backwardsn span {
-  background: rgba(143, 36, 143, 0.736);
+  background: #c455c4b6;
 }
 
 #play-btnred span, #forwardred span, #backwardred span {
-  background: rgba(142, 8, 8, 0.805);;
+  background: rgba(120, 12, 12, 0.852);
 }
 
 #play-btnnine span, #forwardnine span, #backwardnine span {
-  background: rgba(29, 127, 202, 0.733);;
+  background: #065089b9;
 }
 
 #play-btnrep span, #forwardrep span, #backwardrep span {
-  background: rgb(72, 72, 72);
+  background: rgba(33, 33, 33, 0.933);
 }
 
 #play-btnlover span, #forwardlover span, #backwardlover span {
-  background: rgba(241, 36, 135, 0.498);
+  background: rgba(255, 135, 195, 0.731);
 }
 
 #play-btnfolklore span, #forwardfolklore span, #backwardfolklore span {
-  background: grey;
+  background: rgba(128, 128, 128, 0.705);
 }
 
 #play-btnevermore span, #forwardevermore span, #backwardevermore span {
-  background: rgba(186, 87, 11, 0.821);
+  background: rgba(143, 56, 13, 0.854);
 }
 
 #play-btnmidnights span, #forwardmidnights span, #backwardmidnights span {
-  background: rgba(16, 25, 151, 0.897);;
+  background: rgb(34, 53, 128);
 }
 
 .backward span {
@@ -734,7 +735,7 @@ figcaption {
   width: 20px;
   height: 30px;
   border-radius: 50%;
-  background: #34a649bb;
+  background: #29a542a4;
   clip-path: polygon(65% 0, 100% 0, 35% 50%, 100% 100%, 65% 100%, 0 50%);
 }
 
@@ -746,7 +747,7 @@ figcaption {
   width: 20px;
   height: 30px;
   border-radius: 50%;
-  background: #34a649bb;
+  background: #29a542a4;
   transition: 0.5s;
   clip-path: polygon(0 0, 35% 0, 100% 50%, 35% 100%, 0 100%, 65% 50%);
 }
@@ -852,49 +853,49 @@ img {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgba(39, 80, 47, 0.749);
+  background-color: rgba(46, 122, 62, 0.347);
   color: black;
   transform: rotateY(180deg);
 }
 
 #flip-card-backf {
-  background-color: #54480db2;
+  background-color: #8e780a5a;
 }
 
 #flip-card-backsn {
-  background-color: #4a0b5bb0;
+  background-color: #910db544;
 }
 
 #flip-card-backred {
-  background-color: #500909c2;
+  background-color: #47030350;
   color: white;
 }
 
 #flip-card-backnine {
-  background-color: #10427b91;
+  background-color: #10427b59;
   color: white;
 }
 
 #flip-card-backrep {
-  background-color: #313131d6;
+  background-color: #1b1b1b8a;
   color: white;
 }
 
 #flip-card-backlover {
-  background-color: rgba(136, 13, 72, 0.444);
+  background-color: rgba(209, 58, 131, 0.352);
 }
 
 #flip-card-backfolklore {
-  background-color: rgba(66, 66, 66, 0.892);
+  background-color: rgba(70, 70, 70, 0.203);
 }
 
 #flip-card-backevermore {
-  background-color: rgba(128, 65, 17, 0.903);
+  background-color: rgba(102, 41, 10, 0.278);
   color: white;
 }
 
 #flip-card-backmidnights {
-  background-color: rgba(8, 12, 68, 0.611);
+  background-color: rgba(6, 20, 76, 0.356);
   color: white;
 }
 
