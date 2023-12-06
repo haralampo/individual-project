@@ -175,8 +175,8 @@ main {
 }
 
 p {
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 15px;
+    line-height: 30px;
     margin: 50px;
     width: fit-content;
     align-items: center;
@@ -652,6 +652,11 @@ div > img {
     .topnav a {
         font-size: 20px;
         padding: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 40px;
     }
 
     .three {

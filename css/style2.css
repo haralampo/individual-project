@@ -290,8 +290,8 @@ figure {
 
 
  p {
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 15px;
+  line-height: 30px;
   margin: 50px;
   width: fit-content;
   align-items: center;
@@ -900,6 +900,11 @@ img {
 
   main {
     grid-template-rows: 500px auto 550px auto 600px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 40px;
   }
 
   #image1, #image2 {
