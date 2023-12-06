@@ -145,11 +145,29 @@ header {
 
 h1 {
     font-size: 40px;
+    text-shadow:
+        0.02em 0 black,
+        0 0.02em black,
+        -0.02em 0 black,
+        0 -0.02em black,
+        -0.02em -0.02em black,
+        -0.02em 0.02em black,
+        0.02em -0.02em black,
+        0.02em 0.02em black;
 }
 
 h2 {
     font-size: 20px;
     padding-bottom: 10px;
+    text-shadow:
+        0.04em 0 black,
+        0 0.04em black,
+        -0.04em 0 black,
+        0 -0.04em black,
+        -0.04em -0.04em black,
+        -0.04em 0.04em black,
+        0.04em -0.04em black,
+        0.04em 0.04em black;
 }
 
 main {
