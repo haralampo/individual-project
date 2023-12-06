@@ -228,6 +228,7 @@ figure {
 .bodyred {
   background-color: rgba(120, 12, 12, 0.892);
   color: white;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
 
 .bodyred #currentpage {
@@ -241,6 +242,7 @@ figure {
 .bodynine {
   background-color: rgba(27, 107, 169, 0.8);
   color: white;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
 
 .bodynine #currentpage {
@@ -252,8 +254,9 @@ figure {
 }
 
 .bodyrep {
-  background-color: rgba(54, 54, 54, 0.952);
+  background-color: rgba(33, 33, 33, 0.933);
   color: white;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
 
 .bodyrep #currentpage {
@@ -275,6 +278,7 @@ figure {
 .bodyevermore {
   background-color: rgba(143, 56, 13, 0.854);
   color: white;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
 
 .bodyevermore #currentpage {
@@ -286,8 +290,9 @@ figure {
 }
 
 .bodymidnights {
-  background-color: rgba(20, 24, 137, 0.934);
+  background-color: rgba(9, 14, 145, 0.919);
   color: white;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
 
 .bodymidnights #currentpage {
