@@ -833,47 +833,20 @@ img {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgba(46, 122, 62, 0.347);
+  background-color: rgba(0, 0, 0, 0.149);
   color: black;
   transform: rotateY(180deg);
 }
 
-#flip-card-backf {
-  background-color: #8e780a5a;
-}
-
-#flip-card-backsn {
-  background-color: #910db538;
-}
-
-#flip-card-backred {
-  background-color: #47030350;
+.flip-card-backred {
   color: white;
 }
 
-#flip-card-backnine {
-  background-color: #1174b179;
-}
-
-#flip-card-backrep {
-  background-color: #1b1b1b8a;
+.flip-card-backrep {
   color: white;
 }
 
-#flip-card-backlover {
-  background-color: rgba(209, 58, 131, 0.352);
-}
-
-#flip-card-backfolklore {
-  background-color: rgba(70, 70, 70, 0.203);
-}
-
-#flip-card-backevermore {
-  background-color: rgba(106, 35, 0, 0.259);
-}
-
-#flip-card-backmidnights {
-  background-color: rgba(6, 20, 76, 0.356);
+.flip-card-backmidnights {
   color: white;
 }
 
