@@ -241,7 +241,7 @@ figure {
 }
 
 .bodynine {
-  background-color: #065089b9;
+  background-color: #015AA2;
   color: white;
   text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
@@ -277,17 +277,7 @@ figure {
 }
 
 .bodyevermore {
-  background-color: rgba(143, 56, 13, 0.854);
-  color: white;
-  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
-}
-
-.bodyevermore #currentpage {
-  text-decoration: underline white;
-} 
-
-.bodyevermore .music-player {
-  color: white;
+  background-color: rgba(184, 61, 0, 0.743);
 }
 
 .bodymidnights {
@@ -524,7 +514,7 @@ figcaption {
 }
 
 #disknine::before {
-  background: #065089b9;
+  background: #015AA2;
 }
 
 #diskrep::before {
@@ -597,7 +587,7 @@ figcaption {
 }
 
 #seek-barnine {
-  background: #065089b9;
+  background: #015AA2;
 }
 
 #seek-barnine::-webkit-slider-thumb {
@@ -629,11 +619,11 @@ figcaption {
 }
 
 #seek-barevermore {
-  background: rgba(143, 56, 13, 0.854);
+  background: rgba(184, 61, 0, 0.743);
 }
 
 #seek-barevermore::-webkit-slider-thumb {
-  box-shadow: -400px 0 0 400px rgba(88, 39, 2, 0.813);
+  box-shadow: -400px 0 0 400px rgba(88, 39, 1, 0.674);
 }
 
 #seek-barmidnights {
@@ -704,7 +694,7 @@ figcaption {
 }
 
 #play-btnnine span, #forwardnine span, #backwardnine span {
-  background: #065089b9;
+  background: #015AA2;
 }
 
 #play-btnrep span, #forwardrep span, #backwardrep span {
@@ -720,7 +710,7 @@ figcaption {
 }
 
 #play-btnevermore span, #forwardevermore span, #backwardevermore span {
-  background: rgba(143, 56, 13, 0.854);
+  background: rgba(184, 61, 0, 0.743);
 }
 
 #play-btnmidnights span, #forwardmidnights span, #backwardmidnights span {
@@ -872,7 +862,7 @@ img {
 }
 
 #flip-card-backnine {
-  background-color: #10427b59;
+  background-color: #00488393;
   color: white;
 }
 
@@ -890,8 +880,7 @@ img {
 }
 
 #flip-card-backevermore {
-  background-color: rgba(102, 41, 10, 0.278);
-  color: white;
+  background-color: rgba(106, 35, 0, 0.259);
 }
 
 #flip-card-backmidnights {
