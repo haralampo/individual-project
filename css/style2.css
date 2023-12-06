@@ -57,6 +57,10 @@ nav a:focus {
   border: 2px solid black;
 }
 
+.repnav a:focus, #repnavbar a:focus {
+  border: 2px solid white;
+}
+
 .backward:focus-visible, .play-btn:focus-visible, .forward:focus-visible {
   border: 2px solid rgb(0, 0, 0);
 }
