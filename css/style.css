@@ -47,7 +47,7 @@ nav li {
     display: inline-block;
 }
 
-#bottomnav {
+.bottomnav {
     height: fit-content;
     width: fit-content;
     margin-left: 5px;
