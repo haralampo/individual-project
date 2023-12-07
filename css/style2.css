@@ -61,6 +61,14 @@ nav a:focus {
   border: 2px solid white;
 }
 
+.rednav a:focus, #rednavbar a:focus {
+  border: 2px solid white;
+}
+
+.midnightsnav a:focus, #midnightsnavbar a:focus {
+  border: 2px solid white;
+}
+
 .backward:focus-visible, .play-btn:focus-visible, .forward:focus-visible {
   border: 2px solid rgb(0, 0, 0);
 }
